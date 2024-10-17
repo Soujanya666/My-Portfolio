@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>About - G. Soujanya</title>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('certifications') }}">Certifications</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('resume') }}">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to My About Page</h2>
+            <p>I am a dedicated and driven individual with a B.TECH in engineering and a passion for artificial intelligence and machine learning. My skills in project management, Al prompting, and web development make me a well-rounded candidate for an AIML engineer role. I have a strong technical background and a proven ability to work efficiently and effectively in a fast-paced environment. I am eager to contribute my expertise to a dynamic team and help drive innovation in the field of artificial intelligence</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 G. Soujanya. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

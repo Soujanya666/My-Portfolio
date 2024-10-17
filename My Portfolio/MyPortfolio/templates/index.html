@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for Icons -->
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>G. Soujanya</h1>
+        <img src="static/image/portfolio.jpg" alt="Profile Picture" class="profile-pic">
+        <nav>
+            <a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a>
+            <a href="{{ url_for('about') }}"><i class="fas fa-user"></i> About</a>
+            <a href="{{ url_for('projects') }}"><i class="fas fa-laptop-code"></i> Projects</a>
+            <a href="{{ url_for('certifications') }}"><i class="fas fa-certificate"></i> Certifications</a>
+            <a href="{{ url_for('resume') }}"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+            <p>Welcome to my portfolio! Here, you’ll find a blend of the projects I've passionately developed, certifications I've earned, and the achievements that define my journey in the world of AI, Machine Learning, and Web Development. From building real-time emotion detection systems to participating in prestigious hackathons, my work reflects a dedication to pushing the boundaries of technology. My certifications and awards are a testament to my continuous growth and commitment to excellence. Whether you’re here to explore my technical skills, check out interactive demos, or get inspired by my future projects, I invite you to dive into the world of innovation I’m creating.
+
+</p>
+        </section>
+    </main>
+</body>
+</html>
+

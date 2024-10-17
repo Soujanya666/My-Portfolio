@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Certifications - G. Soujanya</title>
+</head>
+<body>
+    <header>
+        <h1>Certifications</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('certifications') }}">Certifications</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('resume') }}">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>My Certifications</h2>
+            <div class="certification">
+                <h3>JBIET Hackathon</h3>
+                <p>4th position in top 50 teams.</p>
+                <img src="static/image/jbiet_hackathon.jpg" alt="JBIET Hackathon Certificate">
+            </div>
+            <div class="certification">
+                <h3>Osmania University Hackathon</h3>
+                <p>Participation certificate.</p>
+                <img src="static/image/osmania_hackathon.jpg" alt="Osmania University Hackathon Certificate">
+            </div>
+            <div class="certification">
+                <h3>Woxsen University Hackathon</h3>
+                <p>Website name: Edugenus (a chatbot for helping students).</p>
+                <img src="static/image/woxsen_hackathon.jpg" alt="Woxsen University Hackathon Certificate">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 G. Soujanya. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

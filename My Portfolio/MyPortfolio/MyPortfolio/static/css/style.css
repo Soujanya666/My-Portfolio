@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Melting background color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    margin: 10px 0; /* Add margin to navigation */
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px; /* Increase font size for icons */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Profile Picture */
+.profile-pic {
+    max-width: 100px; /* Adjust this value for smaller size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: circular shape */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+/* Project and Certification Images */
+.project img,
+.certification img,
+.resume-img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    margin: 10px 0; /* Space around images */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+/* Additional Styles for Layout */
+.container {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center items */
+}
+
+.project, .certification {
+    width: 90%; /* Responsive width for project/certification sections */
+    max-width: 600px; /* Limit maximum width */
+    margin: 20px 0; /* Space between items */
+}

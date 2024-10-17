@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Projects - G. Soujanya</title>
+</head>
+<body>
+    <header>
+        <h1>Projects</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('certifications') }}">Certifications</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('resume') }}">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Real-time Emotion Detection System</h3>
+                <p>This model aims to detect the current emotion of the person based on the facial expression based on the input given by the user by using webcam.</p>
+                <img src="static/image/project2.jpg" alt="Project 2 Image">
+            </div>
+            <div class="project">
+                <h3>Fake News Classification</h3>
+                <p>This model aims to classify the news into fake or real category by taking news article as input from the user.</p>
+                <img src="static/image/project1.jpg" alt="Project 1 Image">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 G. Soujanya. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

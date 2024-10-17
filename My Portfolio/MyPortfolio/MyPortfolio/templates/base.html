@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <title>{% block title %}My Portfolio{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>G. Soujanya</h1>
+        <img src="{{ url_for('static', filename='images/portfolio.jpg') }}" alt="Profile Picture" class="profile-pic">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('about') }}"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="{{ url_for('certifications') }}"><i class="fas fa-certificate"></i> Certifications</a></li>
+                <li><a href="{{ url_for('projects') }}"><i class="fas fa-folder"></i> Projects</a></li>
+                <li><a href="{{ url_for('resume') }}"><i class="fas fa-file"></i> Resume</a></li>
+                <li><a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %} <!-- Placeholder for content of each page -->
+    </main>
+    <footer>
+        <p>© 2024 G. Soujanya. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
